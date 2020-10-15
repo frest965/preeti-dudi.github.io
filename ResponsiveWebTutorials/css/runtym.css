@@ -1,0 +1,20 @@
+.code, .result{
+    font:17pt 'Handlee', cursive;
+    padding: 10px;
+    border-radius: 15px;
+    width:90%;
+    min-height: 400px;
+}
+.code{  
+    background-color:rgba(0,180,180,0.25);
+}
+.result{
+    float:right;
+    margin-right:50px;
+    box-shadow: 2px 2px 24px 1px rgb(142, 197, 223);
+}
+.btn{
+    font:20pt italic'Grenze Gotisch';
+    background-color:rgba(0,180,180,0.4);
+    float:right;
+}

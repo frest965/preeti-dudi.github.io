@@ -1,0 +1,18 @@
+video{
+        width:80%;
+        margin:10px;
+        opacity:0.5;
+        border:none;
+    }    
+    #content{
+        font:12pt "Playfair Display";
+        margin:5px;
+    }
+#topic{
+    font:20pt "Playfair Display";
+    text-decoration:underline double;
+    text-align:center;
+}
+.nav-link{
+        color:antiquewhite;
+    }
