@@ -1,18 +1,22 @@
 body{
     background-color:black;
 }
-
+@keyframes  downward{
+    from{height:0px}
+  to {height:400px  }
+}
 #links{
     background-image:linear-gradient(45deg, #0000ff, #ffffff);
     width:100%;
 }
 #tagline{
-    background-image:url(../images/logo_transparent.png);
+    background-color:blue;
+    background-image:url(../images/logo2.png);
     background-size:contain;
     background-repeat:no-repeat;
     width:100%;
-    box-shadow: 1px 1px 19px 1px grey;
-    height:400px;
+    box-shadow: 1px 1px 19px 1px blue,inset 2px 1px 14px 5px white,inset 2px 1px 14px 5px black;
+    animation:downward 2s ease-in-out 1s 1 forwards ;
 }
 #search{
     color:blue;
@@ -46,7 +50,9 @@ footer ul li{
     vertical-align: bottom;
 }
 .course{
-    background-image:linear-gradient(0deg, rgba(0,200,200,0.5),rgba(0,0,200,0.5),rgba(0,255,255,0.15));
+    background-image:linear-gradient(0deg, rgba(0,200,200,0.5),rgba(0,0,200,0.5),rgba(0,255,255,0.15)),url(../images/logo_transparent.png);
+    background-size:cover;
+    background-repeat:no-repeat;
     box-shadow:0px 2px 4px 1px white;
     width: 96%;
     text-align: center;
