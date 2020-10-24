@@ -32,9 +32,6 @@ body{
     padding:0px;
     font:2rem 'Fruktur', cursive;
 }
-@media(min-width: 576px){
-    font-size:20px;
-}   
 #logo{
     height:90px;
 }
@@ -53,7 +50,7 @@ body{
     background-blend-mode: lighten;
 }
 #banner{
-    background: url("../images/blackLaptop.jpg") no-repeat 0 0;
+    background: url("images/blackLaptop.jpg") no-repeat 0 0;
     background-size: cover;
     padding: 50px 0px;
     height:600px;
@@ -79,7 +76,7 @@ body{
     font-size:20px;
 }
 #platforms{
-    background: url("../images/geometric-pattern-on-chameleon-color-3612932.jpg") no-repeat 0 0;
+    background: url("images/geometric-pattern-on-chameleon-color-3612932.jpg") no-repeat 0 0;
     background-size: cover;
     padding: 50px 0px;
     position: relative;
@@ -135,6 +132,7 @@ body{
     font-size: 23px;
 }
 .flip-box {
+    margin:auto;
     width:200px;
     height:250px;
   border: 1px solid #f1f1f1;
@@ -168,7 +166,7 @@ body{
 /* Style the front side */
 .flip-box-front{
   background-color: dodgerblue;
-  color: black;
+  color: white;
 }
 
 /* Style the back side */
@@ -184,7 +182,6 @@ body{
 .see-profile{
     list-style-type: none;
     font-size:60px;
-    border:10px double blue;
     padding:4px;
 }
 .see-profile li{
@@ -204,3 +201,7 @@ body{
     border: 4px double lightblue;
 }
 #projects,#skills,#contact{font-family: Playfair Display;}
+@media only screen and (max-width: 576px) {
+    #menu{font-size: 15px;margin-left:50px;margin-top:20px}
+    #logo{height:50px;position:absolute}
+}
