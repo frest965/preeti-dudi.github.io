@@ -1,23 +1,57 @@
 #primary-nav{
-    background-image:linear-gradient(45deg,white, #ff0000, #0000ff);
+    position:fixed;
+    box-shadow:0px 0px 10px 0px white;
     font-family: "Fruktur";
     width:100%;
+    background-image:linear-gradient(rgba(0,200,255,0.3),rgba(0,0,0,0.1))
 }
-#primary-nav a{    color:white;}
-#logo{
-    height:100px;
-    animation: rotate 10s linear infinite;
+#primary-nav a{color:white;}
+#logo{height:50px;opacity:0.5}
+a:hover{animation: enlarge 0.5s linear 1;}
+@keyframes enlarge{to{transform:scale(1.5);}}
+#space{height:80px;}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(assets/images/741234-download-blue-smoke-wallpaper-1920x1200.jpg);
+    background-size:cover;
+    background-attachment:fixed;
 }
-a:hover{
-    animation: enlarge 0.5s linear 1;
+.WorkForm{
+    background-image:RADIAL-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.5)), url("assets/images/LostJob.png");float:left;
 }
-@keyframes rotate{
-to{
-    transform: rotate(360deg);
-    }
+.HealthForm{
+    background-image:RADIAL-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.5)), url("assets/images/Hea.jpeg");float:right;
 }
-@keyframes enlarge{
-to{
-        transform:scale(1.5);
-    }
+.StudyForm{
+    background-image:RADIAL-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.5)), url("assets/images/freeEduca.jpg");float:LEFT
+}
+.tag-line,.title{
+    font:italic bold 10rem "Tangerine"; 
+    text-align: right;
+    width:97%;
+    color:white;}
+.tag-line{color:whitesmoke;animation:appear 5s ease-in 1;}
+@keyframes appear{from{opacity:0;color:yellow}to{opacity:1;color:white}}
+.title{animation:leftIn 5s ease-in 1;}
+@keyframes leftIn{from{width:400px;opacity:0;color:blue}to{width:97%;color:aqua}}
+#skill{background-color: black;}
+.WorkForm, .HealthForm, .StudyForm{
+    margin:10%;
+    margin-top:40px;
+    height:650px;
+    padding:10px;
+    background-size:100% 100%;
+    color:white;
+    font-size:2rem;
+    border-radius:20px;
+    background-repeat:no-repeat;
+    box-shadow:1px 1px 20px 2px white;
+}
+@media(min-width:600px){
+    .tag-line,.title{font-size:10rem;}
+    .WorkForm, .HealthForm, .StudyForm{width:50%;}
+}
+@media(max-width:576px){
+    .tag-line,.title{font-size:3rem;text-align:left;margin-left:90px}
+    #primary-nav{}
+    .WorkForm, .HealthForm, .StudyForm{width:80%;}
 }
