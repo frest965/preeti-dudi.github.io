@@ -16,7 +16,10 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-light" id="primary-nav">
        <img class="navbar-hrand logo" id="logo" src="assets/images/logo.png" alt="myOrg">
-       <div class="collapse navbar-collapse" id="links">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
            <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
@@ -39,4 +42,67 @@
            </ul>
         </div>
     </nav>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 ">
+          <div class="Card">
+           <center><h1>Volunteer</h1></center>
+            <div class="Card">
+               What volunteer does?
+                <ul>
+                    <li>Teach Online</li>
+                    <li>Provide medicare</li>
+                    <li>Mentorship</li>
+                    <li>Social Media handling</li>
+                    <li></li>
+                </ul>
+            </div>
+            
+<div class="Card">
+    Volunteer/Help:
+    <label for="Location">
+    Location:<input type=text name=location>
+    </label>
+    <label for="Skills">
+    Skills:
+           <input type="checkbox" value="Medical">Medical
+           <input type="checkbox" value="Education">Education
+           <input type="checkbox" value="Business">Business
+    </label>
+</div>
+            <center><button class="bttn" id="volunteer-btn">VOLUNTEER</button></center>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 ">
+          <div class="Card">
+           <center><h1>Donate</h1></center>               
+            <div class="Card">
+               Where does money go?
+                <ul>
+                    <li>Volunteers</li>
+                    <li>Medicine</li>
+                    <li>Teaching Staff</li>
+                    <li>Maintaining Organizations</li>
+                    <li></li>
+                </ul>
+            </div>
+   
+<div class="Card">
+    Donate:
+    <label for="amount">
+    amount:<input type=number name="amount">
+    </label>
+    <label for="mode">
+    Mode of Payment:
+    <input type="radio" name="modeOfPayment" value="Paytm">Paytm
+    <input type="radio" name="modeOfPayment" value="Google-Pay">Google Pay
+    <input type="radio" name="modeOfPayment" value="Paypal">Paypal
+    <input type="radio" name="modeOfPayment" value="Transfer">TransferWise
+</div>
+            <center><button class="bttn" id="donate-btn">DONATE</button></center>
+        </div>
+        </div>
+    </div>
+</div>
 </body>
