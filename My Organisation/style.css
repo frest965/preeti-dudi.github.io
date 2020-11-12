@@ -1,6 +1,8 @@
 body{
-    background-image:linear-gradient(white,rgba(255,0,255,0.13),rgba(0,0,0,0.141));
+    background-image:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/images/hea.jpeg);
+    background-size:cover;
     background-attachment: fixed;
+    color:white;
 }
 *{
     animation: appear 2s linear 1;
@@ -9,24 +11,30 @@ body{
     from{visibility: collapse;opacity:0}
     to{visibility:visible;opacity:1}
 }
-body{ 
-    background-color:white;
-    color:darkcyan;
-}
 #tagline{
-    color:;
-        height:400px;
-}
-#primary-nav,#impact,#contact,.Card{
-    box-shadow:inset 0px 0px 10px 0px white, 0px 0px 10px 0px darkcyan;
-    background-image:linear-gradient(rgba(250,250,250,0.25),rgba(250,250,250,0.25));
+    background:transparent no-repeat center;
+   }
+#primary-nav,#impact,.Card,.newspost{
+    box-shadow:inset 0px 0px 10px 0px white, 4px 4px 8px 0px darkcyan;
+    background-image:linear-gradient(rgba(0,50,50,0.7525),rgba(0,250,250,0.525)), url("assets/images/blueBg1.jpg");
+    background-size:cover;
     width:100%;
     margin:auto;
+    MARGIN-TOP:50PX;
     margin-bottom:50px;
     padding:10px;
 }
+#primary-nav{
+    margin-bottom:0px;
+    margin-top: 0PX;
+}
+#impact,#primary-nav{
+    box-shadow:0px 0px 10px 0px rgb(0,100,100)
+}
 #primary-nav a{
-    font-family: "Fruktur";color:darkcyan;
+    font-family: "Fruktur";
+    color:white;
+    text-shadow: 1px 1px 2px darkcyan;
 }
 #logo{
     height:50px;opacity:0.5
@@ -45,7 +53,7 @@ a:hover,.bttn:hover{
     width:90%;
     padding:10px;
     font-size:1.4rem;
-    border-radius:20px;
+    border-radius:2x;
 }
 @media(min-width:600px){
     .tag-line,.title{font-size:10rem;}
@@ -72,7 +80,7 @@ footer{
 .bttn{
     box-shadow:inset 0px 0px 10px 0px white, 2px 2px 10px 0px darkcyan;
     background-color:transparent;
-    background-image:linear-gradient(rgba(250,250,250,0.25),rgba(0,0,0,0.25));
+    background-image:linear-gradient(rgba(250,250,250,0.5),rgba(0,0,0,0.5));
     padding:10px;
     border-radius:20px;
     color:white;
@@ -80,11 +88,18 @@ footer{
     border:0px;
     margin:10px;
     text-shadow:0px 2px 9px darkcyan;
-    font-size:1rem;
-    
+    font-size:1rem; 
     text-shadow:4px 4px 6px darkcyan;
 }
-
+.bttn:focus{
+    border:0px;
+    animation: smaller 0.5s linear 1;
+}
+@keyframes smaller{
+    to{
+    transform: scale(0.8);
+}
+}
 h1{
     color:white;
     text-shadow:4px 4px 6px darkcyan;
@@ -95,12 +110,16 @@ h1{
   .container {
     max-width: 540px;
   }
-#tagline{font-size:1.2rem;}
+#tagline{font-size:1.2rem;background-size:contain;
+        height:300px;
+}
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 720px; background-size:cover;
+        height:350px;
+
   }
 #tagline{font-size:1.5rem;}
 }
@@ -109,12 +128,55 @@ h1{
   .container {
     max-width: 960px;
   }
-#tagline{font-size:1.8rem;}
+#tagline{font-size:1.8rem; background-size:cover;
+        height:400px;
+}
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
-#tagline{font-size:2rem;}
+#tagline{font-size:2rem; background-size:cover;
+        height:540px;
+}
+ #main .bttn{
+     margin:40px;
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/images/blueBg1.jpg);
+     background-size: cover;
+     font-weight: bold;   
+}
+    #intro,#intro1{
+        height:150px;
+        padding:40px;
+    }
+aside{
+    position:fixed;
+    top:40%;
+}
+aside img{
+    height: 40px;
+    width:40px;
+    margin:5px;
+    border-radius:50%;
+    box-shadow: 0px 0px 10px 0px white; 
+}
+.news,.gallery,.image,#contact{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    height:500px;
+    align-items: center;
+}
+.newspost{
+    width:30%;
+    height:400px;
+}
+i{
+    font-size:50px;
+}
+.image{
+    background-image:linear-gradient(rgba(0,105,105,0.29),rgba(0,155,155,0.71));
+    width:80%;
+    height:400px
 }

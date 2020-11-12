@@ -50,7 +50,7 @@ body{
     background-blend-mode: lighten;
 }
 #banner{
-    background: url("images/blackLaptop.jpg") no-repeat 0 0;
+    background: url("blackLaptop.jpg") no-repeat 0 0;
     background-size: cover;
     padding: 50px 0px;
     height:600px;
@@ -76,7 +76,7 @@ body{
     font-size:20px;
 }
 #platforms{
-    background: url("images/geometric-pattern-on-chameleon-color-3612932.jpg") no-repeat 0 0;
+    background: url("geometric-pattern-on-chameleon-color-3612932.jpg") no-repeat 0 0;
     background-size: cover;
     padding: 50px 0px;
     position: relative;
