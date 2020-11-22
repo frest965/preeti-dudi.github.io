@@ -152,16 +152,16 @@ h1{
     }
 aside{
     position:fixed;
-    top:40%;
+    top:30%;
 }
-aside img{
-    height: 40px;
-    width:40px;
+aside .bttn{
+    height:50px;
+    width:50px;
     margin:5px;
     border-radius:50%;
     box-shadow: 0px 0px 10px 0px white; 
 }
-.news,.gallery,.image,#contact{
+.news,.gallery,.image,#contact,.footer{
     display:flex;
     justify-content: space-around;
     width:100%;
@@ -179,4 +179,28 @@ i{
     background-image:linear-gradient(rgba(0,105,105,0.29),rgba(0,155,155,0.71));
     width:80%;
     height:400px
+}
+    table{font-weight: 400;font-size: 2rem;margin:auto;}
+    a{font-size:20px;} 
+.footer{
+        align-items: flex-start;
+        height:300px;
+        background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75))
+    }
+#footer{
+        height:50px;
+    }
+.fa{font-size: 20px;}
+#social-icons{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+#social-icons li{
+    display: inline-block;
+    padding-left: 5px;
+}
+#social-icons li a{
+    color:white;
+    font-size: 23px;
 }

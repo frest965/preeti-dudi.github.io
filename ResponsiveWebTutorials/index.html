@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js" async></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light" id="primary-nav">
+    <nav class="navbar navbar-expand-sm navbar-light menu" id="primary-nav">
        <img class="navbar-hrand logo" id="logo" src="images/logo.png" height="120px">
        <div class="collapse navbar-collapse" id="links">
            <ul class="navbar-nav mr-auto">
@@ -37,18 +37,46 @@
     </nav>
     
 <div id="tagline">
-   <div class="container text-white text-center">
+<p class="head"> PROGRAMMING LANGUAGES</p>
+
+<div id="section">
+   <div class="container">
        <div class="row">
-           <div class="col-lg-4"></div>
-            <div class="col-lg-8">  
-                <h1 class="d-none d-lg-block d-print-block">RESPONSIVE WEB TUTORIALS</h1> 
-                <cite class="text-right font-weight-light">Hello!! <br>Welcome</cite>
+           <div class="col-lg-4  col-md-4 col-sm-6">
+              <div class="language" id="java">
+                  <i class="fab fa-java"></i><hr/>
+                      <strong>JAVA</strong><hr>
+                  <div  class="description align-middle">
+                      <cite>JAVA</cite>
+                  </div>
+               </div>
+           </div>
+           <div class="col-lg-4  col-md-4 col-sm-6">
+              <div class="language" id="c">
+                  <i class="fab fa-c"></i><hr/>
+                      <strong>C</strong><hr>
+                  <div  class="description align-middle">
+                      <cite>C</cite>
+                  </div>
+               </div>
+           </div>
+           <div class="col-lg-4  col-md-4 col-sm-6">
+              <div class="language" id="python">
+                  <i class="fab fa-python"></i><hr/>
+                      <strong>PYTHON</strong><hr>
+                  <div  class="description align-middle">
+                      <cite>PYTHON</cite>
+                  </div>
+               </div>
            </div>
        </div>
     </div>
+</div>   
+
+
 </div>
   
-  
+<p class="head">COURSES</p>
   
 <div id="section">
    <div class="container">
@@ -168,10 +196,39 @@ known as "organic") search engine results.</cite>
            </div>
        </div>
     </div>   
-</footer>  
-    <script type="text/javascript" src="js/home.js" async>
-    <script type="text/javascript" src="js/bootstrap.js" async>
-    
+</footer> 
+    <script src="js/bootstrap.js" async></script>
+    <script src="jquery.min.js"8 async></script>
+    <script src="js/home.js" async></script>
+    <script async>
+        
+        $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $(window).height()){
+            $(".menu").css({"background-color":"transparent"});   
+        }
+        else{
+            $(".menu").css({"background-color":"white"});
+        }
+
+    })
+})
+        
+    $(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar").css('background-color', '#0000f0');
+       } else {
+          $('.navbar').css('background-color', 'transparent');
+       }
+   });
+    }
+});
     
     </script>
 </body>
