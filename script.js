@@ -6,12 +6,12 @@ function send(){
     var refference="mailto:frest965@gmail.com?subject="+reason+"contact&body=Name:"+name+"Number:"+number+""+"Email:"+email;
     document.getElementById("send-mail").href = refference;
 }
-var pics=["bdbig.jpg","bgblacknblue.jpg","bgblue.png"];
+var pics=["bdbig.jpg", "bg.jpg","bgblacknblue.jpg","bgblue.png", "blakLaptop.jpg", "bluebg.jpg"];
 var i=0;
 function changeBackground(){
-    var source="url('"+pics[i]+"')";
+    i=(i+1)%6;
+    var source="linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('"+pics[i]+"')";
     document.body.style.backgroundImage=source;
-    i=(i+1)%3;
 }
 
 
@@ -24,15 +24,12 @@ function scrollFunction() {
         a[i].style.fontSize = "20px";
     }
     document.getElementById("logo").style.height="60px";
-      changeBackground();
   } else {
     document.getElementById("header").style.height = "90px";
     document.getElementById("logo").style.height="90px";
     var a=document.getElementsByTagName("a");
     for(i=0;i<5;i++){
         a[i].style.fontSize = "30px";
-        changeBackground();
     }
   }
 }
-
