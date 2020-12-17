@@ -1,4 +1,4 @@
-body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/images/Hea.jpeg) center/cover fixed;}
+body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/images/Hea.jpeg) right center/cover fixed;}
 *{
     color:white;
     animation: appear 2s linear 1;
@@ -14,6 +14,9 @@ body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/
     margin:50PX auto 50px auto;
     padding:10px;
 }
+#address{
+    color:grey;
+}
 #primary-nav{
     margin-bottom:0px;
     margin-top: 0PX;
@@ -25,6 +28,22 @@ body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/
 }
 #logo{
     height:50px;
+}
+
+aside{
+    position:fixed;
+    top:85%;
+    left:15px;
+    width:90%;
+}
+aside .bttn{
+    height:40px;
+    border-radius:15px;
+    width:10%;
+    margin-left:8%;
+    box-shadow: 0px 0px 10px 0px white; 
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/images/blueBg1.jpg) center/cover;
+    font-weight:bolder;
 }
 .Card{
     width:90%;
@@ -97,14 +116,15 @@ a{font-size:20px;}
     align-items:center;
     height:210px;
     color:white;
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75))
+    background:rgb(0,50,50);
 }
 .footer:nth-child(1){
     margin-left: 30px;
 }    .
-#footer{
+.footer-widget{
     height:30px;
-    background-color:rgb(0,0,0);
+    width:100%;
+    background:rgb(0,0,0);
 }   
 .fa{font-size: 20px;}
 #social-icons{
@@ -137,18 +157,28 @@ a{font-size:20px;}
     .tag-line,.title{font-size:10rem;}
 }
 @media(max-width:576px){
-    .tag-line,.title{font-size:3rem;text-align:left;margin-left:90px}
-    #primary-nav{}
-}
-@media (min-width: 576px) {
-  .container {
+.container {
     max-width: 540px;
   }
 #tagline{
     font-size:1.2rem;
-    background-size:contain;
-    height:300px;
+    background-size:cover;
+    height:340px;
 }
+#tagline .container {
+    border:10px double white;
+    margin:10px auto 10px;
+    height:350px;
+}
+ #impact{
+    font-size:1.2rem;
+}
+.see{
+    font-size:1.2rem
+}
+}
+@media (min-width: 576px) {
+  
 }
 
 @media (min-width: 768px) {
@@ -206,19 +236,5 @@ a:hover,.bttn:hover{
     font-size:38px;
     font-weight:100;
 }
-aside{
-    position:fixed;
-    top:85%;
-    left:15px;
-    width:90%;
 }
-aside .bttn{
-    height:40px;
-    border-radius:15px;
-    width:10%;
-    margin-left:8%;
-    box-shadow: 0px 0px 10px 0px white; 
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/images/blueBg1.jpg) center/cover;
-    font-weight:bolder;
-}
-}
+
